@@ -1,0 +1,654 @@
+/* Mise en page main */
+
+*, ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color:#f6f8f9;
+    font-family: acumin Pro;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+/* Espace haut de page */
+
+.solo {
+    width: auto;
+    height: 2rem;
+}
+
+
+/* Premier block header  */
+
+.header-container {
+    display: flex;
+    height: 26rem;
+    background-color: white;
+    margin: auto;
+}
+
+.left__header {
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assests/img/max-van-den-oetelaar-buymYm3RQ3U-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    
+}
+
+.left__header__container{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 9.5rem;
+    gap: 1.5rem;
+    color: white;
+    margin: auto;
+    padding-bottom: 11rem;
+}
+
+.left__header_container__title1{
+    text-transform: uppercase;
+    font-size: 0.5rem;
+}
+
+.progress_bar{
+    width: 279%;
+    height: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f6f8f9;
+    margin-top: 2em;
+}
+
+.progress_bar2{
+    width: 100%;
+    height: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f6f8f9;
+    margin-top: 2.5em;
+}
+
+.separate__bar__rightC{
+    width: 100%;
+    height: 2px;
+    background-color: #fa6980;
+    margin-left: 100%;
+}
+
+.separate__bar__leftC {
+    width: 100%;
+    height: 2px;
+    background-color: #fa6980;
+    margin-left: 100%;
+}
+
+.right__header_container__title:hover .separate__bar__rightC {
+    border-color: #fa6980;
+    margin-left: 0%;
+    transition: 0.5s all linear 0s;
+}
+
+.left__header_container__title1:hover .separate__bar__leftC{
+    border-color: #fa6980;
+    margin-left: 0%;
+    transition: 0.5s all linear 0s;
+}
+
+.left__header_container__title2{
+    font-size: 0.9rem;
+}
+
+.left__header__container__article{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.left__header_container__paraph{
+    line-height: 1.3rem;
+    font-size: 0.7rem;
+}
+
+.style_btn_leftH{
+    background-color: #fa6980;
+    width: 5.5rem;
+    height: 1.6rem;
+    border-radius: 18px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out 25ms;
+}
+
+.style_btn_leftH:hover{
+    background-color: transparent;
+    border: 2px solid #fa6980;
+    color: #fa6980;
+    border-radius: 76% 25% 39% 62% / 59% 30% 71% 40%       ;
+}
+
+.right__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50em;
+}
+
+.right__header_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 4.5rem; 
+}
+
+.right__header_container_up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right__header__article__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.right__header_container__title{
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.4em;
+}
+
+.quote_container{
+    display: flex;
+    gap: 2em;
+    margin-right: 0.5em;
+}
+
+.quote_left{
+    font-weight: bold;
+    color: #a6adb4;
+    cursor: pointer;
+}
+
+.quote_right{
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.right__header__article__title1{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: #fa6980;
+}
+
+.right__header__article__title2{
+    font-size: 0.6rem;
+}
+
+.right__header__article__paraph{
+    font-size: 0.7rem;
+    color: #a6adb4;
+}
+
+.articles-times {
+    display: flex;
+    font-size: 0.6rem;
+    font-style: italic;
+    color: #a6adb4;
+    gap: 0.5rem;
+}
+
+/* Deuxième block body */
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 51rem;
+    margin: auto;
+    margin-top: 35px;
+    gap: 2rem;
+}
+
+.three-pics-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 51rem;
+
+}
+
+.three-pics__title_up{
+    display: flex;
+    justify-content: space-between;}
+
+.three-pics__title {
+    text-transform: uppercase;
+    font-size: 0.5rem;
+}
+
+.three-pics-container__articles{
+    display: flex;
+    gap: 0.7rem;
+    cursor: pointer;
+}
+
+.three-pics__article{
+    display: flex;
+    flex-direction: column;
+    width: 16.5rem;
+    gap: 0.7rem;
+
+}
+
+.three-pics-articles__text{
+    display: flex;
+    flex-direction: column;
+    width: 16.5rem;
+    gap: 0.5rem;
+    /* background-color: white; */
+}
+
+.three-pics-articles-text__title{
+    font-size: 0.6rem;
+}
+
+.three-pics-articles__img1{
+    width: 16.5em;
+    height: 8rem;
+    background-image: url(/assests/img/isis-franca-4uZXCWaseNE-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+    /* box-shadow: 5px 5px 5px #a6adb4;; */
+
+}
+
+.three-pics-articles__img2{
+    width: 16.5rem;
+    height: 8rem;
+    background-image: url(/assests/img/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+    /* box-shadow: 5px 5px 5px #a6adb4;; */
+
+}
+
+.three-pics-articles__img3{
+    width: 16.5rem;
+    height: 8rem;
+    background-image: url(/assests/img/josefin-WS5yjFjycNY-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+    /* box-shadow: 5px 5px 5px #a6adb4;; */
+
+}
+
+.three-pics-articles-text__paraph{
+    font-size: 0.6rem;
+    color: #a6adb4;
+}
+
+.imgH:hover{
+    box-shadow: 5px 5px 5px #a6adb4;
+    transform: scale(0.92);
+}
+
+/* Block 5 images */
+
+.five-pics-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.five-pics__title_up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.five-pics-title {
+    text-transform: uppercase;
+    font-size: 0.5rem;
+}
+
+.five-pics-main-articles__container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.large-articles-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.large-article-title h3{
+    font-size: 0.7rem;
+}
+
+.large-article1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem;
+    height: 18.5rem;
+    background-image: url(/assests/img/pawel-wisniewski-ln7whDJ46r0-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.large-article1:hover{
+    box-shadow: 10px 5px 5px #a6adb4;;
+    transform: scale(0.92);
+}
+
+.large-article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem;
+    height: 18.5rem;
+    background-image: url(/assests/img/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.large-article2:hover{
+    box-shadow: 10px 5px 5px #a6adb4;
+    transform: scale(0.92);
+}
+
+.large-article-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.large-article-content h2{
+    font-size: 0.9rem;
+}
+
+.large-article-content p{
+    font-size: 0.7rem;
+}
+
+.large-article-title{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* Small articles */
+
+.small-articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-articles{
+    display: flex;
+    flex-direction: column;
+    width: 16.6rem;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.small-articles__img1 {
+    height: 8.5rem;
+    background-image: url(/assests/img/yousef-espanioly-L6g30JaQ5Tc-unsplash.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.small-articles__img2 {
+    background-image: url(/assests/img/jay-castor-7AcMUSYRZpU-unsplash.jpg);
+    height: 8.5rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.small-articles__img3 {
+    background-image: url(/assests/img/patrick-assale-CI_CzpszgUU-unsplash.jpg);
+    height: 8.5rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.small-articles__title {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+}
+
+.pages ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.others-pages{
+    text-decoration: none;
+    color: #a6adb4;
+}
+
+.others-pages:active{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fa6980;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+.first-page {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fa6980;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+.three-littles {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+.name_underline{
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer-main-container{
+    display: flex;
+    background-color: #3ec457;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 6px;
+}
+
+.links-footer{
+    display: flex;
+    gap: 6.5rem;
+}
+
+.links-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.links-list a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in 25ms;
+}
+
+.links-list a:hover{
+    color: #fa6980;
+}
+
+.footer-logo {
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.footer-logo img{
+    width: 9em;
+    height: 11em;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border: 2px solid #a6adb4;
+}
+
+.footer-logo img:hover{
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.footer-mailing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mailing-container{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.arrow{
+    margin-left: -28px;
+    cursor: pointer;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
+}
+
+.arrow:hover{
+    -webkit-transform: rotateZ(720deg);
+    -moz-transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
+}
+
+.mailing-text{
+    font-size: 0.6rem;
+    color: white;
+}
+
+.mailing-container input{
+    background-color: #3ec457;
+    border: 1px solid #ffffff;
+    height: 1.8rem;
+    width: 12rem;
+    border-radius: 5px;
+    padding-left: 15px;
+    transition: 0.2s ease-in-out 25ms;
+
+}
+
+.mailing-container input::placeholder{
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+.mailing-container input:focus{
+    outline: #fa6980;
+}
+
+input:focus {
+    border: 1px solid #fa6980;
+}
+
+.social.socials-icons-container{
+    display: flex;
+}
+
+.socials-icons-list{
+    display: flex;
+    gap: 1.5em;
+}
+
+.socials-icons-list a{
+    color: white;
+    transition: 0.2s ease-in 25ms;
+}
+
+.socials-icons-list a:hover{
+    color: #fa6980;
+}
+
+.mail-socials{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+

@@ -1,0 +1,581 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+html, body{
+    font-family: acumin Pro;
+    background-color: #f6f8f9;
+}
+
+.header_main-container{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: flex-end;
+    padding-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.ariane-fils{
+    display: flex;
+    gap: 2em;
+    font-size: 0.5rem;
+    align-items: center;
+}
+
+.home {
+    font-size: 0.7rem;
+}
+.ariane-fils span:nth-child(4){
+    color: #a6adb4;
+}
+
+/* .burger-menu{
+    display: flex;
+    border: 2px solid #ebeded;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 0.7rem;
+} */
+
+.sliders {
+    z-index: 10;
+    position: absolute;
+}
+
+.burger-menu {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 480px;
+    left: 803px;
+    right: 0;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0, 3);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ebeded;
+    padding: 7px;
+    z-index: 1;
+
+}
+
+.burger-menu:hover::before{
+    animation: rotate 2s infinite linear;
+    content: "";
+    background-image: conic-gradient(
+        #fa6980 20deg,
+        transparent 120deg
+    );
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    z-index: 1;
+
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.burger-menu::after{
+    content: "";
+    height: 88%;
+    width: 87%;
+    border-radius: 3px;
+    position: absolute;
+    background-color: #f6f8f9;
+    top: 6%;
+    left: 7%;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    letter-spacing: 6px;
+    z-index: 1;
+}
+
+.two-blocks_container{
+    display: flex;
+    height: 22em;
+    justify-content: space-between;
+    gap: 4em;
+    margin-bottom: 1.5em;
+}
+
+.left_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/assests/img/lari-avn-GQfUVmwR0Uo-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #f6f8f9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 25em;
+}
+
+.leftC_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 15em;
+    margin: auto;
+}
+
+.left_block p {
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+}
+
+.left_block h1 {
+    font-size: 1.5rem;
+}
+
+.leftC_content span{
+    display: flex;
+    border: 1.5px solid white;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(/assests/img/Dylan-o-brien.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0.03px;
+}
+
+.progress_bar{
+    overflow: hidden;
+    background-color: #fa6980;
+    width: 40px;
+    margin: auto;
+}
+
+.separate__bar__leftC{
+    display: flex;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin-left: 100%;
+}
+
+.leftC_content:hover .separate__bar__leftC{
+    border-color: white;
+    margin-left: 0%;
+    transition: 0.5s all linear 0s;
+}
+
+.right_block {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 30em;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.rightC_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    width: 20em;
+    padding: 2.5em;
+}
+
+.select-style {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+.select-style select {
+    padding: 4px 8px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #a6adb4;
+}
+
+.select-style:after {
+    top: 66%;
+    left: 90%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #a6adb4;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+.select-style select:focus {
+    outline: none;
+    border: 1.7px solid #fa6980;
+
+}
+
+.rightC_content input, .rightC_content select{
+    height: 2em;
+    border: 1.7px solid #ebeded;
+    border-radius: 4px;
+}
+
+.rightC_content label {
+    font-weight: bold;
+    font-size: 0.5rem;
+}
+
+.search_input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.search_input input{
+    padding-left: 3px;
+}
+
+.search_input input:focus{
+    outline: none;
+    height: 2em;
+    border: 1.7px solid #fa6980;
+    border-radius: 4px;
+
+}
+ 
+.style_btn_rightC{
+    background-color: #fa6980;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out 25ms;
+}
+
+.style_btn_rightC:hover{
+    background-color: transparent;
+    border: 2px solid #fa6980;
+    color: #fa6980;
+    border-radius: 76% 25% 39% 62% / 59% 30% 71% 40%       ;
+}
+
+.separate__bar{
+    border: #ebeded 1px solid;
+}
+
+/* Main body */
+
+.main-body_container {
+    display: flex;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    font-size: 0.6rem;
+    justify-content: center;
+    gap: 2em;
+}
+
+.left-block-profil {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    gap: 1em;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.middle-block, .right-block{
+    color: #a6adb4;
+    flex-basis: 0;
+    flex-grow: 1;
+    gap: 2em;
+    line-height: 1.1rem;
+
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    flex-basis: 0;
+}
+
+.left-block-profil span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(/assests/img/Dylan-o-brien.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0.03px;
+}
+
+
+/* End container */
+
+.end_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.end-text-block {
+    display: flex;
+    gap: 2.5em;
+    color: #a6adb4;
+}
+
+.left-end-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    line-height: 1.1rem;
+    font-size: 0.6rem;
+}
+
+.right-end-text {
+    display: flex;
+    line-height: 1.3rem;
+    width: 125em;
+    color: black;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.image-full {
+    background-image: url(/assests/img/markus-spiske-4PG6wLlVag4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+/* Style pages */
+
+.pages {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+}
+
+.pages ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.others-pages{
+    text-decoration: none;
+    color: #a6adb4;
+}
+
+.others-pages:active{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fa6980;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+.third-page {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fa6980;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+.three-littles {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.name_underline{
+    cursor: pointer;
+}
+
+
+
+/* Footer */
+
+.footer-main-container{
+    display: flex;
+    background-color: #3ec457;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 6px;
+}
+
+.links-footer{
+    display: flex;
+    gap: 6.5rem;
+}
+
+.links-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.links-list a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in 25ms;
+}
+
+.links-list a:hover{
+    color: #fa6980;
+}
+
+.footer-logo {
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.footer-logo img{
+    width: 9em;
+    height: 11em;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border: 2px solid #a6adb4;
+}
+
+.footer-logo img:hover{
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.footer-mailing {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mailing-container{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.arrow{
+    margin-left: -28px;
+    cursor: pointer;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
+}
+
+.arrow:hover{
+    -webkit-transform: rotateZ(720deg);
+    -moz-transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
+}
+
+.mailing-text{
+    font-size: 0.6rem;
+    color: white;
+}
+
+.mailing-container input{
+    background-color: #3ec457;
+    border: 1px solid #ffffff;
+    height: 1.8rem;
+    width: 12rem;
+    border-radius: 5px;
+    padding-left: 15px;
+    transition: 0.2s ease-in-out 25ms;
+
+}
+
+.mailing-container input::placeholder{
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+.mailing-container input:focus{
+    outline: #fa6980;
+}
+
+input:focus {
+    border: 1px solid #fa6980;
+}
+
+.social.socials-icons-container{
+    display: flex;
+}
+
+.socials-icons-list{
+    display: flex;
+    gap: 1.5em;
+}
+
+.socials-icons-list a{
+    color: white;
+    transition: 0.2s ease-in 25ms;
+}
+
+.socials-icons-list a:hover{
+    color: #fa6980;
+}
+
+.mail-socials{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
