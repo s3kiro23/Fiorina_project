@@ -135,6 +135,11 @@ ul {
     transition: 0.2s ease-in-out 25ms;
 }
 
+.link_button {
+    text-decoration: none;
+    color: white;
+}
+
 .style_btn_leftH:hover{
     background-color: transparent;
     border: 2px solid #fa6980;
