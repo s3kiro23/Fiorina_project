@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assests/css/large_desktop3.css">
     <script
     src="src/components/footer.js"
-    type="text/javascript"
     defer
     ></script>
     <title>Fiorina Project - Large_desktop3</title>
@@ -40,22 +39,20 @@
             </div>
             <div class="right_block">
                 <div class="rightC_content">
-                    <div class="select-style">
-                        <label for="date">Select a date</label>
+                    <form class="select-style">
+                        <label for="date-select">Select a date</label>
                         <select name="date-select" id="date-select">
                             <option value="">Select...</option>
                             <option value="select1">select1</option>
                             <option value="select2">select2</option>
                             <option value="select3">select3</option>
                         </select>
-                    </div>
+                    </form>
                     <div class="search_input">
                         <label for="search">Enter the first keywords</label>
                         <input type="search" name="search" id="search">
                     </div>
-                    <a href="#">
-                        <button class="style_btn_rightC" type="submit">SEARCH</button>
-                    </a>
+                    <button onclick="btnClick();" class="style_btn_rightC" type="submit">SEARCH</button>
                 </div>
             </div>
         </div>
@@ -135,6 +132,11 @@
         </ul>
     </div>
     <footer-component></footer-component>
+    <script src="https://kit.fontawesome.com/9414e04596.js" crossorigin="anonymous"></script>
+    <script>
+        function btnClick(){
+            window.location.href = "#";
+        }
+    </script>
 </body>
-<script src="https://kit.fontawesome.com/9414e04596.js" crossorigin="anonymous"></script>
 </html>

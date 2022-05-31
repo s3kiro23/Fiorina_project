@@ -22,7 +22,7 @@ header{
     gap: 1.3rem;
     color: white;
     background-image: url(/assests/img/jay-castor-7AcMUSYRZpU-unsplash.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -7.8rem;
     height: 73vh;
@@ -152,7 +152,7 @@ header{
     width: 30%;
     background-image: url(/assests/img/alexandra-gorn-1mPkRa-qM_U-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 

@@ -41,7 +41,7 @@ ul {
     justify-content: center;
     background-image: url(/assests/img/max-van-den-oetelaar-buymYm3RQ3U-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     
 }
@@ -281,7 +281,7 @@ ul {
     height: 8rem;
     background-image: url(/assests/img/isis-franca-4uZXCWaseNE-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -294,7 +294,7 @@ ul {
     height: 8rem;
     background-image: url(/assests/img/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -307,7 +307,7 @@ ul {
     height: 8rem;
     background-image: url(/assests/img/josefin-WS5yjFjycNY-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -368,7 +368,7 @@ ul {
     height: 18.5rem;
     background-image: url(/assests/img/pawel-wisniewski-ln7whDJ46r0-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -388,7 +388,7 @@ ul {
     height: 18.5rem;
     background-image: url(/assests/img/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -438,7 +438,7 @@ ul {
     height: 8.5rem;
     background-image: url(/assests/img/yousef-espanioly-L6g30JaQ5Tc-unsplash.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -448,7 +448,7 @@ ul {
     background-image: url(/assests/img/jay-castor-7AcMUSYRZpU-unsplash.jpg);
     height: 8.5rem;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;
@@ -458,7 +458,7 @@ ul {
     background-image: url(/assests/img/patrick-assale-CI_CzpszgUU-unsplash.jpg);
     height: 8.5rem;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     transition: 0.2s ease-in-out 20ms;

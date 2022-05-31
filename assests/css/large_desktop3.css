@@ -63,7 +63,7 @@ html, body{
     bottom: 480px;
     left: 803px;
     right: 0;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0, 3);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0);
     border-radius: 5px;
     overflow: hidden;
     background-color: #ebeded;
